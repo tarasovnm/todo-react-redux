@@ -1,0 +1,13 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+
+  &__item {
+    color: #8a8e93;
+
+    &.active {
+      color: #fcfcfc;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.task {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fcfcfc;
+  border-top: 1px solid #82878c;
+
+  &:last-child {
+    border-bottom: 1px solid #82878c;
+  }
+
+  &__check {
+    color: #82878c;
+    cursor: pointer;
+  }
+
+  &.done &__check {
+    color: #61dbfb;
+  }
+
+  &__text {
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+
+  &.done &__text {
+    color: #82878c;
+  }
+
+  &__del {
+    margin-left: 15px;
+    color: #82878c;
+    background-color: transparent;
+    border: none;
+
+    &:active {
+      color: #5cc7e5;
+      outline: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

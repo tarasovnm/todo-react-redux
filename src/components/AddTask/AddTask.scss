@@ -1,0 +1,27 @@
+.add {
+  margin-bottom: 40px;
+
+  &__text {
+    padding: 8px;
+    margin-right: 10px;
+    width: 400px;
+    border-radius: 3px;
+    border: none;
+  }
+
+  &__btn {
+    color: #fcfcfc;
+    padding: 8px 20px;
+    background-color: #61dbfb;
+    border: none;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: #35bfe3;
+    }
+
+    &:active {
+      background-color: #00a2cc;
+    }
+  }
+}

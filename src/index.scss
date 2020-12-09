@@ -11,12 +11,11 @@ $default-font: "Roboto", sans-serif;
 body {
   position: relative;
   font-family: $default-font;
-  font-size: 20px;
+  font-size: 16px;
   background-color: #61dbfb;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 img {

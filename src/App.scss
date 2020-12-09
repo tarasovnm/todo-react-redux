@@ -1,6 +1,116 @@
 .App {
-  width: 900px;
-  height: 600px;
+  width: 800px;
+  height: 540px;
+  padding: 40px;
   background-color: #393f49;
   border-radius: 6px;
+  box-shadow: 13px 13px 23px -14px rgba(0,0,0,0.75);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  &__date {
+    font-size: 18px;
+    color: #fcfcfc;
+    margin: 0;
+  }
+
+  &__tasks {
+    font-size: 14px;
+    color: #5cc7e5;
+    margin: 0;
+  }
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+
+  &__item {
+    color: #8a8e93;
+
+    &.active {
+      color: #fcfcfc;
+    }
+  }
+}
+
+.add {
+  margin-bottom: 40px;
+
+  &__text {
+    padding: 8px;
+    margin-right: 10px;
+    width: 400px;
+    border-radius: 3px;
+    border: none;
+  }
+
+  &__btn {
+    color: #fcfcfc;
+    padding: 8px 20px;
+    background-color: #61dbfb;
+    border: none;
+    border-radius: 3px;
+
+    &:hover {
+      background-color: #35bfe3;
+    }
+
+    &:active {
+      background-color: #00a2cc;
+    }
+  }
+}
+
+.task {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fcfcfc;
+  border-top: 1px solid #82878c;
+
+  &:last-child {
+    border-bottom: 1px solid #82878c;
+  }
+
+  &__check {
+    color: #82878c;
+  }
+
+  &.done &__check {
+    color: #61dbfb;
+  }
+
+  &__text {
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+
+  &.done &__text {
+    color: #82878c;
+  }
+
+  &__del {
+    margin-left: 15px;
+    color: #82878c;
+    background-color: transparent;
+    border: none;
+
+    &:active {
+      color: #5cc7e5;
+      outline: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
 }

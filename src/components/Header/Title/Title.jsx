@@ -1,10 +1,10 @@
 import "./Title.scss";
 
-function Title() {
+function Title({dateString, activeTodos}) {
     return (
         <div className="title">
-            <h2 className="title__date">Wednesday, December 9</h2>
-            <p className="title__tasks">3 Active Tasks</p>
+            <h2 className="title__date">{dateString}</h2>
+            <p className="title__tasks">{activeTodos} Active Tasks</p>
         </div>
     );
 }

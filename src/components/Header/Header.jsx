@@ -1,12 +1,12 @@
 import "./Header.scss";
-import Title from "./Title/Title";
-import TodoFilter from "./TodoFilter/TodoFilter";
+import TitleContainer from "./Title/TitleContainer";
+import TodoFilterContainer from "./TodoFilter/TodoFilterContainer";
 
 function Header() {
     return (
         <div className="header">
-            <Title/>
-            <TodoFilter/>
+            <TitleContainer/>
+            <TodoFilterContainer/>
         </div>
     );
 }
